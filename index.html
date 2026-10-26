@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="American Series — сайт о шедеврах американского телевидения">
+<title>Главная | American Series</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="logo" href="index.html">AMERICAN<span> SERIES</span></a>
+<nav><a class="active" href="index.html">Главная</a><a class="" href="catalog.html">Каталог</a><a class="" href="contact.html">Контакты</a></nav>
+</div>
+</header>
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">Для тех, кто любит хорошие истории</div>
+<h1>Шедевры американских сериалов</h1>
+<p>Топ-10 сериалов с оценками IMDb: драмы, комедии и фантастика. Выбирайте, что посмотреть вечером.</p>
+<a class="btn" href="catalog.html">Открыть каталог</a>
+<a class="btn secondary" href="breaking-bad.html">Начать с лучшего</a>
+</div>
+</section>
+
+<main class="wrap">
+<div class="section-head"><h2>Лучшие по оценке зрителей</h2><p>Первые четыре места в рейтинге IMDb</p></div>
+<div class="grid">
+<article class="card"><a class="poster red has-img" href="breaking-bad.html"><img src="images/breaking-bad.svg" alt="Во все тяжкие" loading="lazy"><span class="chip">★ 9.5</span><strong>Во все тяжкие</strong></a><div class="card-body"><div class="meta">2008–2013 · Криминальная драма</div><h3>Во все тяжкие</h3><p>Учитель химии начинает производить запрещённые вещества и постепенно меняет свою жизнь.</p><a class="read" href="breaking-bad.html">Подробнее →</a></div></article><article class="card"><a class="poster blue has-img" href="game-of-thrones.html"><img src="images/game-of-thrones.svg" alt="Игра престолов" loading="lazy"><span class="chip">★ 9.2</span><strong>Игра престолов</strong></a><div class="card-body"><div class="meta">2011–2019 · Фэнтези · Драма</div><h3>Игра престолов</h3><p>Борьба знатных домов за Железный трон на фоне древней угрозы, которая просыпается на севере.</p><a class="read" href="game-of-thrones.html">Подробнее →</a></div></article><article class="card"><a class="poster orange has-img" href="better-call-saul.html"><img src="images/better-call-saul.svg" alt="Лучше звоните Солу" loading="lazy"><span class="chip">★ 8.9</span><strong>Лучше звоните Солу</strong></a><div class="card-body"><div class="meta">2015–2022 · Криминальная драма</div><h3>Лучше звоните Солу</h3><p>Путь мелкого юриста Джимми Макгилла к образу Сола Гудмана.</p><a class="read" href="better-call-saul.html">Подробнее →</a></div></article><article class="card"><a class="poster gold has-img" href="true-detective.html"><img src="images/true-detective.svg" alt="Настоящий детектив" loading="lazy"><span class="chip">★ 8.9</span><strong>Настоящий детектив</strong></a><div class="card-body"><div class="meta">2014– · Криминальная драма · Антология</div><h3>Настоящий детектив</h3><p>Каждый сезон — отдельное расследование и новые герои, которые сталкиваются со своим прошлым.</p><a class="read" href="true-detective.html">Подробнее →</a></div></article>
+</div>
+
+<div class="facts">
+<div><b>10</b><span>сериалов в каталоге</span></div>
+<div><b>8.1–9.5</b><span>диапазон оценок IMDb</span></div>
+<div><b>1994–2025</b><span>годы выхода</span></div>
+<div><b>3</b><span>жанра: драма, комедия, фантастика</span></div>
+</div>
+
+<div class="content">
+<h2>О сайте</h2>
+<p>American Series — учебный информационный сайт об американских сериалах. Он помогает познакомиться с известными проектами, узнать их жанры и выбрать сериал для просмотра.</p>
+<ul>
+<li>Каталог из десяти сериалов с оценками IMDb.</li>
+<li>Отдельная страница для каждого сериала: сюжет, факты и совет зрителю.</li>
+<li>Быстрые переходы между сериалами внизу каждой страницы.</li>
+</ul>
+<a class="btn" href="catalog.html">Перейти в каталог →</a>
+</div>
+
+<div class="content" id="feedback">
+<h2>Обратная связь</h2>
+<p>Расскажите, какой сериал стоит добавить на сайт. Все поля обязательны.</p>
+<form class="contact-form" id="contact-form" novalidate>
+<div class="field">
+<label for="fio">ФИО</label>
+<input id="fio" name="fio" type="text" placeholder="Иванов Иван Иванович" autocomplete="name">
+<div class="err"></div>
+</div>
+<div class="field">
+<label for="phone">Номер телефона</label>
+<input id="phone" name="phone" type="tel" placeholder="+7 999 123 45 67" autocomplete="tel">
+<div class="err"></div>
+</div>
+<div class="field">
+<label for="email">Почта</label>
+<input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email">
+<div class="err"></div>
+</div>
+<button type="submit">Отправить</button>
+<div id="form-status" class="form-status" role="status"></div>
+</form>
+</div>
+</main>
+<script src="script.js"></script>
+<footer>
+<div class="wrap foot">
+<span>© 2026 American Series · Учебный проект</span>
+<span>Сайт о шедеврах американского телевидения</span>
+</div>
+</footer>
+</body>
+</html>

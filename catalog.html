@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Каталог лучших американских сериалов">
+<title>Каталог | American Series</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="logo" href="index.html">AMERICAN<span> SERIES</span></a>
+<nav><a class="" href="index.html">Главная</a><a class="active" href="catalog.html">Каталог</a><a class="" href="contact.html">Контакты</a></nav>
+</div>
+</header>
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">Топ-10</div>
+<h1>Каталог сериалов</h1>
+<p>Десять лучших американских сериалов с рейтингом IMDb. Нажмите на карточку, чтобы увидеть подробности.</p>
+</div>
+</section>
+
+<main class="wrap">
+<div class="section-head"><h2>Все сериалы</h2><p>Отсортированы по рейтингу IMDb</p></div>
+<div class="grid" id="series-grid"><p class="load-error">Загрузка…</p></div>
+
+<div class="content">
+<h2>Рейтинг IMDb</h2>
+<table class="rt">
+<thead><tr><th>#</th><th>Сериал</th><th>Жанр</th><th>Годы</th><th class="r">IMDb</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><a href="breaking-bad.html">Во все тяжкие</a></td><td>Криминальная драма</td><td>2008–2013</td><td class="r">★ 9.5</td></tr>
+<tr><td>2</td><td><a href="game-of-thrones.html">Игра престолов</a></td><td>Фэнтези · Драма</td><td>2011–2019</td><td class="r">★ 9.2</td></tr>
+<tr><td>3</td><td><a href="better-call-saul.html">Лучше звоните Солу</a></td><td>Криминальная драма</td><td>2015–2022</td><td class="r">★ 8.9</td></tr>
+<tr><td>4</td><td><a href="true-detective.html">Настоящий детектив</a></td><td>Криминальная драма · Антология</td><td>2014–</td><td class="r">★ 8.9</td></tr>
+<tr><td>5</td><td><a href="friends.html">Друзья</a></td><td>Ситком</td><td>1994–2004</td><td class="r">★ 8.9</td></tr>
+<tr><td>6</td><td><a href="the-office.html">Офис</a></td><td>Ситком · Мокьюментари</td><td>2005–2013</td><td class="r">★ 8.9</td></tr>
+<tr><td>7</td><td><a href="house.html">Доктор Хаус</a></td><td>Медицинская драма</td><td>2004–2012</td><td class="r">★ 8.7</td></tr>
+<tr><td>8</td><td><a href="stranger-things.html">Очень странные дела</a></td><td>Фантастика · Хоррор</td><td>2016–2025</td><td class="r">★ 8.6</td></tr>
+<tr><td>9</td><td><a href="mentalist.html">Менталист</a></td><td>Детектив · Криминальная драма</td><td>2008–2015</td><td class="r">★ 8.2</td></tr>
+<tr><td>10</td><td><a href="big-bang-theory.html">Теория большого взрыва</a></td><td>Ситком</td><td>2007–2019</td><td class="r">★ 8.1</td></tr>
+</tbody>
+</table>
+<p class="note">Оценки округлены и со временем могут немного меняться.</p>
+</div>
+</main>
+
+<div id="detail-section" class="modal hidden" role="dialog" aria-modal="true">
+<div class="modal-box">
+<button id="close-btn" class="modal-close" aria-label="Закрыть">×</button>
+<div id="detail-card"></div>
+</div>
+</div>
+<script src="catalog.js"></script>
+<footer>
+<div class="wrap foot">
+<span>© 2026 American Series · Учебный проект</span>
+<span>Сайт о шедеврах американского телевидения</span>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Форма обратной связи American Series">
+<title>Контакты | American Series</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="logo" href="index.html">AMERICAN<span> SERIES</span></a>
+<nav><a class="" href="index.html">Главная</a><a class="" href="catalog.html">Каталог</a><a class="active" href="contact.html">Контакты</a></nav>
+</div>
+</header>
+<section class="hero">
+<div class="wrap">
+<div class="eyebrow">Обратная связь</div>
+<h1>Контакты</h1>
+<p>Напишите нам: предложите сериал для каталога или задайте вопрос. Поля формы проверяются регулярными выражениями.</p>
+</div>
+</section>
+
+<main class="wrap">
+<div class="content">
+<form class="contact-form" id="contactForm" novalidate>
+<div class="field"><label for="fio">ФИО</label>
+<input id="fio" name="fio" type="text" placeholder="Иванов Иван Иванович" autocomplete="name"><div class="msg"></div></div>
+<div class="field"><label for="phone">Номер телефона</label>
+<input id="phone" name="phone" type="tel" placeholder="+996 555 123 456" autocomplete="tel"><div class="msg"></div></div>
+<div class="field"><label for="email">Почта</label>
+<input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email"><div class="msg"></div></div>
+<button type="submit">Отправить</button>
+<div id="result" class="result" role="status"></div>
+</form>
+
+<h2>Какие выражения используются</h2>
+<table class="rt">
+<thead><tr><th>Поле</th><th>Регулярное выражение</th><th>Пример</th></tr></thead>
+<tbody>
+<tr><td>ФИО</td><td><code>^[А-ЯЁA-Z][а-яёa-z]+(?:-[А-ЯЁA-Z][а-яёa-z]+)?\s[А-ЯЁA-Z][а-яёa-z]+(?:\s[А-ЯЁA-Z][а-яёa-z]+)?$</code></td><td>Иванов Иван Иванович</td></tr>
+<tr><td>Телефон</td><td><code>^(?:\+996\d{9}|\+7\d{10}|8\d{10})$</code></td><td>+996 555 123 456</td></tr>
+<tr><td>Почта</td><td><code>^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$</code></td><td>name@example.com</td></tr>
+</tbody>
+</table>
+<p class="note">Перед проверкой телефона пробелы, скобки и дефисы удаляются.</p>
+</div>
+</main>
+<script src="validate.js"></script>
+
+<footer>
+<div class="wrap foot">
+<span>© 2026 American Series · Учебный проект</span>
+<span>Сайт о шедеврах американского телевидения</span>
+</div>
+</footer>
+</body>
+</html>
